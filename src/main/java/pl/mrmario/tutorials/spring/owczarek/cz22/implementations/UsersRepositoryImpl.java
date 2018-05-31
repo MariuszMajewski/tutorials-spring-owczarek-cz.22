@@ -7,7 +7,7 @@ import pl.mrmario.tutorials.spring.owczarek.cz22.api.Logger;
 import pl.mrmario.tutorials.spring.owczarek.cz22.api.UsersRepository;
 import pl.mrmario.tutorials.spring.owczarek.cz22.domain.User;
 
-//@Service
+@Service
 public class UsersRepositoryImpl implements UsersRepository {
 	@Autowired
 	private Logger logger;

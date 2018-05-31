@@ -9,10 +9,9 @@
 	<!--  
 		<bean id="logger" class="pl.mrmario.tutorials.spring.owczarek.cz22.implementations.LoggerImpl"></bean>
 		<bean id="userRepository" class="pl.mrmario.tutorials.spring.owczarek.cz22.implementations.UsersRepositoryImpl" autowire="byType"/>
- 	-->
+ 	
 	<bean id="logger" class="pl.mrmario.tutorials.spring.owczarek.cz22.implementations.LoggerImpl"></bean>
 	<bean id="usersRepository" class="pl.mrmario.tutorials.spring.owczarek.cz22.implementations.UsersRepositoryImpl"/>
-
+-->
 	<context:annotation-config/>
-<!-- <context:component-scan base-package="pl.mrmario.tutorials.spring.owczarek.cz22"/> -->
-</beans> 
+	<context:component-scan base-package="pl.mrmario.tutorials.spring.owczarek.cz22"/></beans> 

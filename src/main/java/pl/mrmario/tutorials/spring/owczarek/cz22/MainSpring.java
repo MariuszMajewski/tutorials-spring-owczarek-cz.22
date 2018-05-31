@@ -7,17 +7,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import pl.mrmario.tutorials.spring.owczarek.cz22.api.UsersRepository;
 
 /**
- * @author MrMario108
- *
+ * @author Artur Owczarek
+ * 	MrMario108
  */
 public class MainSpring {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
-		UsersRepository userRep = context.getBean("usersRepository", UsersRepository.class);
+		UsersRepository userRep = context.getBean("usersRepositoryImpl", UsersRepository.class);
 		userRep.createUser("Janek");
-		//System.out.println();
-		
 	}
 }
